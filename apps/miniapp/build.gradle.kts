@@ -7,6 +7,10 @@ plugins {
 kotlin {
     js {
         browser {
+            // Add a browser test runner with the first frontend behavior.
+            testTask {
+                enabled = false
+            }
             commonWebpackConfig {
                 outputFileName = "miniapp.js"
                 devServer = (devServer ?: KotlinWebpackConfig.DevServer()).apply {

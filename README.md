@@ -35,6 +35,8 @@ macOS / Linux 使用相同參數執行 `./gradlew`。
 
 目前沒有登入、LIFF 呼叫、Rich Menu 建立、資料庫或業務 API。CI 在 Linux 與 Windows 驗證建置與後端啟動，不代表已完成 LINE 平台或手機端整合驗證。
 
+後端包含 HTTP 啟動測試；前端尚無行為測試，第一個前端行為加入時再啟用 browser test runner。`kotlin-js-store/package-lock.json` 由 Gradle 管理並納入版本控制，固定 npm 相依版本。
+
 ## 結構與演進
 
 ```text
